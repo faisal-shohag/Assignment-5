@@ -23,6 +23,8 @@ const continue_btn = document.querySelector('#continue')
 let selected_seats =[]
 let total_seats = 40
 
+
+// handle the seat cliclk and count the available seat and many more...........
 seats.forEach(function(seat) {
     seat.addEventListener('click', function(e){
         classList = Object.values(this.classList)
@@ -79,38 +81,47 @@ seats.forEach(function(seat) {
 // coupon apply
 apply_coupon.addEventListener('click', function(e) {
     console.log('Clicked!')
-    if(coupon.value == "New15") {
+    if(coupon.value == "") {
+        coupon_msg.innerHTML = `<div class="font-bold font-inter text-red-500">Please enter coupon to apply!</div>`
+    }else if(coupon.value == "New15") {
         totalPrice(selected_seats, 15)
         box.innerHTML = `<div class="font-bold font-inter bg-[#27AE60] p-3 rounded-xl text-white">Coupon Applied! You got 15% OFF!</div>`
     } else if(coupon.value == "Couple 20") {
         totalPrice(selected_seats, 20)
         box.innerHTML = `<div class="font-bold font-inter bg-[#27AE60] p-3 rounded-xl text-white">Coupon Applied! You got 20% OFF!</div>`
     } else{
-        coupon_msg.innerHTML = `<div class="font-bold font-inter text-red-500">Invalid Coupon!</div>`
+        coupon_msg.innerHTML = `<div class="font-bold font-inter text-red-500">Invalid coupon code!</div>`
     }
 })
 
 
+// handle the phone number
 phone.addEventListener("input", function(e){
     checkNextButtonAvailability(phone.value, selected_seats)
 })
 
 
+// show/hide the modal button after clicking the next button
 next.addEventListener('click', function(e) {
     modal.classList.contains('hidden') ?
         modal.classList.remove('hidden') : modal.classList.add('hidden')
 })
 
+// click continue button to hide the modal
 continue_btn.addEventListener('click', function(e) {
     modal.classList.add('hidden')
 })
 
+
+// deselect the seat after clicking a selected seat
 function deleteSeat(seat) {
     selected_seats = selected_seats.filter(function(s) {
         return s.seatName != seat
     })
 }
 
+
+// calculate the total price with/without the discount and show to the dom
 function totalPrice(seats, discount=0) {
     let total = 0;
     seats.forEach(function(seat) {
@@ -126,6 +137,8 @@ function totalPrice(seats, discount=0) {
     }
 }
 
+
+// update seat list
 function updateDOMSeat(seats) {
     all_seats.innerHTML = ''
     if(seats.length === 0) {
@@ -143,6 +156,8 @@ function updateDOMSeat(seats) {
 }   
 
 
+
+//check next button availability
 function checkNextButtonAvailability(inputVal, seats){
     if(inputVal.length > 0 && seats.length>0){
         next.classList.remove('btn-disabled')
