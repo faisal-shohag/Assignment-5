@@ -1,0 +1,373 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Ticket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{font-family: "Raleway", sans-serif;}
+        .font-inter{
+            font-family: "Inter", sans-serif;
+        }
+
+    </style>
+</head>
+  <body data-theme="light">
+    <!-- Top Section -->
+    <div class="px-[245px] py-5">
+      <header>
+        <div class="flex justify-between items-center">
+            <div class="font-[900] text-2xl">E-Ticket</div>
+            <div class="flex gap-5 font-[500]">
+                <div class="text-sm">Home</div>
+                <div class="text-sm">About</div>
+                <div class="text-sm">Destination</div>
+                <div class="text-sm">Search</div>
+            </div>
+            <div class="flex justify-center items-center gap-2 font-bold text-sm text-[#1DD100] bg-[#1DD1001A] p-2 rounded-xl border-2 border-[#1DD10066]">Bus<img src="./images/bus-icon.png"></div>
+        </div>
+      </header>
+
+      <!-- bg -->
+      <div class="w-full text-center items-center justify-center bg-center mt-10 flex flex-col bg-[url('./images/banner.png')] bg-no-repeat h-[550px]">
+            <div class="font-[900] text-white text-[64px]">End-to-End Travel with</div>
+            <div class="font-[900] text-[64px] text-[#1DD100]">E Paribahan</div>
+            <div class="text-[18px] text-white w-2/3 mt-3">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</div>
+            <a href="#buy_ticket"><div class="btn bg-[#1DD100] border-none font-bold mt-10">Buy Tickets</div></a>
+        </div>
+
+    <!-- Best offers for you -->
+    <div class="text-[40px] font-bold mt-20 text-center">Best offers for you</div>
+     <div class="mt-10 gap-5 flex justify-between items-center">
+        <div class="flex-1 h-[220px] bg-[#FFBF0F] rounded-3xl flex justify-between items-center px-10">
+            <div class="">
+                <div class="font-[900] text-[#030712CC] text-[40px] font-inter">15% OFF</div>
+                <div class="font-bold font-inter text-[#030712CC] text-[20px]">On your next purchase</div>
+                <div class="font-bold font-inter text-[#03071280] text-[18px]">use by January 2024</div>
+            </div>
+            <div class=""><img src="./images/cupon-devider.png"></div>
+            <div class="">
+                <div class="font-bold text-[#030712] text-[32px]">New15 </div>
+                <div class="font-bold text-[#03071266] text-[20px]">Coupon Code </div>
+            </div>
+        </div>
+
+        <div class="flex-1 h-[220px] bg-[#F78C9C] rounded-3xl flex justify-between items-center px-10">
+            <div class="">
+                <div class="font-[900] text-[#030712CC] text-[40px] font-inter">20% OFF</div>
+                <div class="font-bold font-inter text-[#030712CC] text-[20px]">On your next purchase</div>
+                <div class="font-bold font-inter text-[#03071280] text-[18px]">use by January 2024</div>
+            </div>
+            <div class=""><img src="./images/cupon-devider.png"></div>
+            <div class="">
+                <div class="font-bold text-[#030712] text-[32px]">Couple 20</div>
+                <div class="font-bold text-[#03071266] text-[20px]">Coupon Code </div>
+            </div>
+        </div>
+
+     </div>
+    <div class="flex justify-center"> <div class="mt-10 btn bg-white border-2 font-bold text-[#1DD100]  border-[#1DD100]"> See All Offers</div></div>
+    </div>
+
+    <!-- Main section -->
+    <div id="buy_ticket" class="text-center flex items-center flex-col bg-[#F7F8F8] w-full mt-20 border-t-2 border-[#1DD100] rounded-[88px]">
+        <div class="font-[700] text-4xl mt-24">P.H Paribahan</div>
+        <div class="text-md text-[#03071299] w-1/3 mt-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</div>
+        
+        <div class="h-[418px] w-[1170px] mt-20 flex justify-between bg-white rounded-3xl">
+            <div class="w-[808px] gap-10 flex flex-col justify-center pl-10">
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-3 items-center">
+                        <img class="h-[48px]" src="./images/bus-logo.png">
+                        <div class="flex flex-col text-left">
+                            <div class="font-[700] text-3xl">Greenline Paribahan</div>
+                            <div class="font-[400] text-[#03071299] text-lg font-inter">Coach-009-WEB ! AC_Business</div>
+                        </div>
+                    </div>
+                    <div class="bg-[#1DD10026] text-[#1DD100] flex gap-2 rounded-2xl p-3 font-bold items-center font-inter"><img src="./images/seat-green.png"> <span class="font-inter" id="total_seats">40</span> Seats left</div>
+                </div>
+                <div class="px-5 py-5 bg-[#F7F8F8] h-[258px] rounded-3xl text-lg">
+                    <div class="flex mt-2 justify-between items-center border-b-2 pb-5 border-[#03071233] border-dashed">
+                        <div class="font-bold text-[#03071299]">Route</div><div class="font-bold text-[#030712]">Dhaka-Sylhet</div>
+                    </div>
+
+                    <div class="flex justify-between items-center border-b-2 pb-5 mt-5 border-[#03071233] border-dashed">
+                        <div class="font-bold text-[#03071299]">Departure Time</div><div class="font-bold text-[#030712]">9:00 PM</div>
+                    </div>
+
+                    <div class="flex justify-between mt-5 items-center gap-2">
+                        <div class="text-lg font-[500] text-[#030712CC] bg-[#0307120D] p-3 rounded-xl font-inter">Boarding Point - Laxmipur</div>
+                        <div class="text-lg font-[500] text-[#030712CC] bg-[#0307120D] p-3 rounded-xl font-inter">Dropping Point - Bogura</div>
+                        <div class="text-lg font-[500] text-[#030712CC] bg-[#0307120D] p-3 rounded-xl font-inter">Est. Time - 11 Hour</div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="./images/info-devider.png"></div>
+            <div class="flex pr-10 flex-col justify-center items-center gap-5">
+                <img src="./images/fare.png">
+                <div class="font-[700] text-[#030712] text-3xl px-10">550 Taka</div>
+                <div class="text-[#03071299] font-bold text-xl">Per Seat</div>
+            </div>
+        </div>
+
+        <div class="py-10 px-10 mb-64 mt-10 flex justify-between bg-white rounded-3xl">
+
+            <!-- seat -->
+            <div class="text-left border-r-2 pr-10 border-[#0307124D] border-dashed">
+                <div class="text-[#030712] text-2xl font-bold">Select Your Seat</div>
+                <div class="mt-5 border-t-2 border-[#03071233] border-dashed  border-b-2 py-3 flex justify-between items-center text-lg font-bold">
+                    <div class="flex gap-3 items-center text-[#03071280] font-inter"><img src="./images/seat-gray.png"> Available</div>
+                    <div class="flex gap-3 items-center text-[#1DD100] font-inter"><img src="./images/seat-green-filled.png"> Selected</div>
+                </div>
+                <div class="mt-5 flex flex-row-reverse">
+                    <div class="bg-[#0307121A] p-5 rounded-xl flex justify-center items-center w-[100px]"><img src="./images/driver.png"></div>
+                </div>
+                <!-- seats -->
+                <div class="flex gap-10 items-center mt-5 justify-center">
+                    <div class="flex flex-col gap-14">
+                        <div class="text-[#03071280] text-lg font-bold font-inter">A</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">B</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">C</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">D</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">E</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">F</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">G</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">H</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">I</div>
+                        <div class="text-[#03071280] text-lg font-bold font-inter">J</div>
+                    </div>
+
+                    <div class="flex gap-12 items-center text-center">
+                        <div class="flex flex-col gap-5 cursor-pointer">
+                            <div class="flex gap-10 items-center">
+                                <div id="A1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">A1</div>
+                                <div id="A2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">A2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="B1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">B1</div>
+                                <div id="B2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">B2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="C1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">C1</div>
+                                <div id="C2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">C2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="D1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">D1</div>
+                                <div id="D2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">D2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="E1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">E1</div>
+                                <div id="E2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">E2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="F1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">F1</div>
+                                <div id="F2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">F2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="G1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">G1</div>
+                                <div id="G2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">G2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="H1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">H1</div>
+                                <div id="H2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">H2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="I1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">I1</div>
+                                <div id="I2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">I2</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="J1" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">J1</div>
+                                <div id="J2" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">J2</div>
+                            </div>
+                        </div>
+                        <!-- col 3 -->
+                        <div class="flex flex-col gap-5 cursor-pointer">
+                            <div class="flex gap-10 items-center">
+                                <div id="A3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">A3</div>
+                                <div id="A4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">A4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="B3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">B3</div>
+                                <div id="B4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">B4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="C3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">C3</div>
+                                <div id="C4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">C4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="D3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">D3</div>
+                                <div id="D4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">D4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="E3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">E3</div>
+                                <div id="E4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">E4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="F3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">F3</div>
+                                <div id="F4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">F4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="G3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">G3</div>
+                                <div id="G4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">G4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="H3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">H3</div>
+                                <div id="H4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">H4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="I3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">I3</div>
+                                <div id="I4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">I4</div>
+                            </div>
+                            <div class="flex gap-10 items-center">
+                                <div id="J3" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">J3</div>
+                                <div id="J4" class="bg-[#F7F8F8] w-[110px] p-5 rounded-xl text-[#03071280] font-inter font-bold hover:bg-[#1DD100] seat hover:text-[#FFFFFF]">J4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- calculation -->
+            <div style="width: 50%;" class="text-left pl-10">
+                <div class="text-[#030712] text-2xl font-bold border-b-2 border-dashed border-[#03071233] pb-5">Select Your Seat</div>
+
+                <div class="bg-[#F7F8F8] rounded-xl py-10 px-5 mt-5 flex flex-col gap-3">
+                    <div class="font-bold text-lg flex justify-between items-center border-b-2 border-dashed pb-3 border-[#03071233]">
+                        <div class="flex gap-1 font-inter">Seat <span id="seat-count" class="bg-[#1DD100] rounded-md font-inter text-white text-[12px] px-2 py-0 flex justify-center items-center">0</span></div>
+                        <div class="font-inter">Class</div>
+                        <div class="font-inter">Price</div>
+                    </div>
+
+                    <div id="all_seats" class="flex flex-col gap-3">
+                      <div class="font-bold font-inter text-center py-5 text-orange-500">No seat is selected yet!</div>
+                    </div>
+
+                    <div class="border-b-2 border-solid border-[#03071233]"></div>
+
+                    <div class="flex justify-between">
+                        <div class="font-inter font-bold">Total Price</div>
+                        <div id="total_price" class="font-inter font-bold">0</div>
+                    </div>
+
+                    <div id="coupon_msg"></div>
+                    <div id="box" class="bg-[#D5D6D9] px-3 rounded-lg py-2">
+                        <div class="flex justify-between">
+                            <input id="coupon" class="bg-[#D5D6D9] text-grey-darker outline-none rounded-md font-inter w-1/2 pl-2" type="text" placeholder="Have any coupon?" disabled>
+                            <div  id="apply_coupon" class="w-[80px] rounded-xl text-white bg-[#1DD100] font-bold p-3 btn font-inter btn-disabled">Apply</div>
+                        </div>
+                    </div>
+
+                    <div id="discount_price" class="flex justify-between mt-2">
+                    </div>
+                    
+
+                    <div class="flex justify-between mt-2">
+                        <div class="font-inter font-bold">Grand Total Price</div>
+                        <div id="grand_total" class="font-inter font-bold">0</div>
+                    </div>
+                </div>
+
+                <!-- form -->
+               <div>
+                <div class="mt-5">
+                    <div class="font-inter font-bold">Passenger Name*</div>
+                    <input id="name" class="bg-white font-inter mt-2 w-full p-3 rounded-xl outline-1 outline-[#0307121A] border-2 border-[#0307121A]" type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="mt-5">
+                    <div class="font-inter font-bold">Phone Number*</div>
+                    <input id="phone" class="bg-white font-inter mt-2 w-full p-3 rounded-xl outline-1 outline-[#0307121A] border-2 border-[#0307121A]" type="number" placeholder="Enter your phone number">
+                </div>
+
+                <div class="mt-5">
+                    <div class="font-inter font-bold">Email ID</div>
+                    <input id="email" class="bg-white font-inter mt-2 w-full p-3 rounded-xl outline-1 outline-[#0307121A] border-2 border-[#0307121A]" type="email" placeholder="Enter your email id">
+                </div>
+
+                <div id="next" class="btn btn-disabled bg-[#1DD100] w-full mt-10 text-lg font-bold font-inter text-white rounded-xl">Next</div>
+
+                <div class="flex items-center gap-10 text-sm justify-center mt-5 underline text-[#03071299]">
+                    <a class="font-inter" href="#">Terms and Conditions</a>
+                    <a class="font-inter" href="#">Cancellation Policy</a>
+                </div>
+               </div>
+               <!-- form end -->
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="bg-[#030712] px-44 py-20">
+        <div class="flex justify-between">
+            <div class=" w-5/12">
+                <div class="text-white text-4xl font-[900]">E-Ticket</div>
+                <div class="text-lg text-[#FFFFFFCC] font-inter mt-5">E-Ticket is a digital platform to make your daily commuting better.</div>
+            </div>
+            <div class="text-right">
+                <div class="text-white text-2xl">Download our app</div>
+                <div class="bg-black border-2 text-left mt-5 border-white flex items-center gap-3 rounded-lg p-3 justify-center cursor-pointer">
+                    <img src="./images/playstore.png">
+                    <div class="text-white">
+                        <div class="font-inter text-lg">GET IT ON</div>
+                        <div class="font-inter text-2xl font-bold">Google Play</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" border-b-2 border-[#FFFFFF4D] mt-10 border-dashed"></div>
+        <div class="flex mt-5 justify-between items-center font-inter">
+            <div class="text-[#FFFFFFB3]">@all rights reserved, E-Ticket services limited.2024</div>
+            <div class="flex gap-10 text-white font-bold font-inter">
+                <div>Terms & condition</div>
+                <div>Return & refund policy</div>
+                <div>Privacy policy</div>
+            </div>
+        </div>
+
+    </footer>
+
+
+<!-- Toasts -->
+<!-- Error -->
+<div id="error-toast" class="hidden">
+    <div class="toast toast-top toast-center">
+        <div class="alert alert-error">
+        <span class="font-inter font-bold text-white">You can't buy more than 4 seats!</span>
+        </div>
+    </div>
+</div>   
+
+
+<!-- modal -->
+<div id="modal" class="hidden">
+    <div class="h-full w-full flex justify-center items-center z-20 fixed left-0 top-0">
+        <div class="bg-white p-10 flex flex-col text-center justify-center items-center rounded-xl max-w-screen-sm shadow-xl">
+
+            <img src="./images/success.png">
+            <div class="text-[#27AE60] font-inter font-bold mt-5 text-lg">Success</div>
+
+            <div class="text-[#4A4A4A] font-bold font-inter mt-5">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. </div>
+
+            <div class="text-[#4A4A4A] font-inter mt-2">Shortly you will find a confirmation in your email. </div>
+
+            <div id="continue" class="mt-10 btn bg-[#27AE60] text-white font-bold text-lg rounded-full px-20">Continue</div>
+
+        </div>
+    </div>
+</div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
