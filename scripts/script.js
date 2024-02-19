@@ -173,7 +173,7 @@ function totalPrice(seats, discount=0) {
     if(discount!=0) {
         discount_price.innerHTML = `
         <div class="font-inter font-bold">Discount Price</div>
-        <div id="grand_total" class="font-inter font-bold">${(total*(discount/100))}</div>
+        <div id="grand_total" class="font-inter font-bold">BDT ${(total*(discount/100))}</div>
         `
     } else {
         discount_price.innerHTML = ""
