@@ -10,9 +10,10 @@ const discount_price = document.querySelector('#discount_price')
 const total_seats_show = document.querySelector('#total_seats')
 const error_toast = document.querySelector('#error-toast')
 const box = document.querySelector('#box')
+const success_coupon = document.querySelector('#success_coupon')
 
 
-const name = document.querySelector("#name")
+const username = document.querySelector("#name")
 const phone = document.querySelector('#phone')
 const email = document.querySelector('#email')
 const next = document.querySelector('#next')
@@ -81,14 +82,24 @@ seats.forEach(function(seat) {
 // coupon apply
 apply_coupon.addEventListener('click', function(e) {
     console.log('Clicked!')
+
+    if(success_coupon.classList.contains('hidden')) {
+        success_coupon.classList.remove('hidden')
+    }
+
+    seats.forEach(function(seat) {
+        seat.classList.add('pointer-events-none')
+    })
     if(coupon.value == "") {
         coupon_msg.innerHTML = `<div class="font-bold font-inter text-red-500">Please enter coupon to apply!</div>`
     }else if(coupon.value == "New15") {
         totalPrice(selected_seats, 15)
-        box.innerHTML = `<div class="font-bold font-inter bg-[#27AE60] p-3 rounded-xl text-white">Coupon Applied! You got 15% OFF!</div>`
+        box.classList.add('hidden')
+        success_coupon.innerHTML = `<div class="font-bold font-inter bg-[#27AE60] p-3 rounded-xl text-white">Coupon Applied! You got 15% OFF!</div>`
     } else if(coupon.value == "Couple 20") {
         totalPrice(selected_seats, 20)
-        box.innerHTML = `<div class="font-bold font-inter bg-[#27AE60] p-3 rounded-xl text-white">Coupon Applied! You got 20% OFF!</div>`
+        box.classList.add('hidden')
+        success_coupon.innerHTML = `<div class="font-bold font-inter bg-[#27AE60] p-3 rounded-xl text-white">Coupon Applied! You got 20% OFF!</div>`
     } else{
         coupon_msg.innerHTML = `<div class="font-bold font-inter text-red-500">Invalid coupon code!</div>`
     }
@@ -107,9 +118,39 @@ next.addEventListener('click', function(e) {
         modal.classList.remove('hidden') : modal.classList.add('hidden')
 })
 
+
 // click continue button to hide the modal
 continue_btn.addEventListener('click', function(e) {
     modal.classList.add('hidden')
+    selected_seats = []
+    username.value = ""
+    phone.value = ""
+    email.value = ""
+    total_seats = 40
+    total_seats_show.innerText = total_seats 
+    sc.innerText = 0
+    success_coupon.classList.add('hidden')
+    box.classList.remove('hidden')
+
+    seats.forEach(function(seat) {
+        seat.classList.remove('pointer-events-none')
+    })
+
+    seats.forEach(function(seat) {
+        if(seat.classList.contains('bg-[#1DD100]')) {
+            seat.classList.remove('bg-[#1DD100]')
+            seat.classList.remove('text-white')
+            seat.classList.add('bg-[#F7F8F8]')
+            coupon_msg.innerHTML = ""
+            coupon.value = ""
+        }
+    })
+
+    updateDOMSeat(selected_seats)
+    totalPrice(selected_seats)
+    checkNextButtonAvailability(phone.value, selected_seats)
+
+
 })
 
 
@@ -134,6 +175,8 @@ function totalPrice(seats, discount=0) {
         <div class="font-inter font-bold">Discount Price</div>
         <div id="grand_total" class="font-inter font-bold">${(total*(discount/100))}</div>
         `
+    } else {
+        discount_price.innerHTML = ""
     }
 }
 
